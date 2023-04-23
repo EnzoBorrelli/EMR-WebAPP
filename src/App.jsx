@@ -1,5 +1,6 @@
 import './components/LandingMenu/LandingMenu'
 import LandingMenu from './components/LandingMenu/LandingMenu';
+import NavMenu from './components/NavMenu';
 
 function App() {
 
@@ -7,7 +8,7 @@ function App() {
   return (
     <div className="App">
     
-      <LandingMenu/>
+      <NavMenu/>
     </div>
   )
 }

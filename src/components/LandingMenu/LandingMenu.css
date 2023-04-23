@@ -151,6 +151,9 @@
   color: var(--text-hover-color);
   box-shadow: 0 2px 0 0 currentcolor;
 }
+a.active{
+  color: var(--text-hover-color);
+}
 
 /* ___Parte Responsive 480px(movil)__*/
 

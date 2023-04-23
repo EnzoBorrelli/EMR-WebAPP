@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./LandingMenu.css";
 import logo from "./logo.png";
 
@@ -73,29 +74,29 @@ const LandingMenu = () => {
           <nav className={`LandingMenu-nav ${menu ? "isActive" : ""}`}>
             <ul className="LandingMenu-ul">
               <li className="LandingMenu-li">
-                <a href="#" className="LandingMenu-a">
+                <NavLink to="/Inicio" className="LandingMenu-a">
                   Inicio
-                </a>
+                </NavLink>
               </li>
               <li className="LandingMenu-li">
-                <a href="#" className="LandingMenu-a">
+                <NavLink to="/Sobre" className="LandingMenu-a">
                   Sobre Nosotros
-                </a>
+                </NavLink>
               </li>
               <li className="LandingMenu-li">
-                <a href="#" className="LandingMenu-a">
+                <NavLink to="/" className="LandingMenu-a">
                   Catálogo
-                </a>
+                </NavLink>
               </li>
               <li className="LandingMenu-li">
-                <a href="#" className="LandingMenu-a">
+                <NavLink to="/" className="LandingMenu-a">
                   Pagos
-                </a>
+                </NavLink>
               </li>
               <li className="LandingMenu-li">
-                <a href="#" className="LandingMenu-a">
+                <NavLink to="/" className="LandingMenu-a">
                   Envios
-                </a>
+                </NavLink>
               </li>
             </ul>
           </nav>
