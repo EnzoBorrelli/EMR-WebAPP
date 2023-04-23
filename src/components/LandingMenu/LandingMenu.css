@@ -1,18 +1,27 @@
+:root {
+  --primary-bg-color: #171918;
+  --secondary-bg-color: #303633;
+  --terciary-bg-color: #47524d;
+  --light-tone:#82938c;
+  --hover-tone:#41a757;
+  --text-color:#eafff2;
+  --text-disabled:#c2c2c2;
+  --text-hover-color:#5dff53;
+}
+
 .LandingMenu {
   width: 100%;
-  background-color: orange;
-  padding: .5em;
 
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 
-  color: rgb(0, 0, 0);
+  color: var(--text-color);
 }
 .LandingMenu-Container {
   width: 100%;
-  background-color: blue;
+  background-color:var(--primary-bg-color);
   display: flex;
   flex-direction: column;
 }
@@ -21,7 +30,7 @@
   padding-right: 2rem;
   display: flex;
   flex-flow: row nowrap;
-  background-color: blueviolet;
+  background-color: var(--primary-bg-color);
   margin: .5rem 0;
 }
 .Container-sub--b {
@@ -29,7 +38,7 @@
   padding-right: 2rem;
   display: flex;
   flex-flow: row nowrap;
-  background-color: blueviolet;
+  background-color: var(--secondary-bg-color);
   margin: .5rem 0;
 }
 .Container-sub--user {
@@ -61,33 +70,32 @@
   font-weight: bold;
   width: 20rem;
   height: 2rem;
-  background-color: cadetblue;
+  background-color: var(--terciary-bg-color);
   border-radius: 1rem 0 0 1rem;
 }
 .LandingMenu-Input:focus {
   outline: none;
-  background-color: rgb(65, 110, 111);
+  background-color: var(--secondary-bg-color);
 }
 .LandingMenu-SearchBtn {
   border-radius: 0 1rem 1rem 0;
   height: 2rem;
   cursor: pointer;
-  background-color: darkgoldenrod;
+  background-color: var(--light-tone);
 }
 .LandingMenu-SearchBtn:hover {
-  background-color: rgb(184, 51, 11);
+  background-color: var(--hover-tone);
 }
 .LandingMenu-UserBtn {
   cursor: pointer;
 }
 .LandingMenu-logo {
   height: 7rem;
-  width: 10rem;
+  width: 15rem;
 }
 .LandingMenu-Dropbutton {
   display: none;
   cursor: pointer;
-  background-color: red;
 }
 
 .LandingMenu-svg {
@@ -101,11 +109,11 @@
   height: 1.5rem;
 }
 .LandingMenu-svg--user:hover {
-  fill: rgb(212, 255, 0);
+  fill: var(--text-hover-color);
 }
 .LandingMenu-svg--contact {
-  width: 2rem;
-  height: 2rem;
+  width: 1.6rem;
+  height: 1.6rem;
   margin-left: 1rem;
 }
 .LandingMenu-a--contact {
@@ -114,11 +122,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 .LandingMenu-a--contact:hover {
-  color: darkgrey;
+  color: var(--text-hover-color);
 }
 .Contact-Button{
   display: none;
@@ -128,15 +136,20 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background-color: blanchedalmond;
+  background-color: var(--secondary-bg-color);
 }
 .LandingMenu-li {
   font-weight: bold;
+  font-size: 1.4rem;
   text-align: center;
   margin: 0 2rem;
 }
-.LandingMenu-li:hover {
-  color: greenyellow;
+.LandingMenu-ul:hover .LandingMenu-a {
+  color: var(--text-disabled);
+}
+.LandingMenu-ul:hover .LandingMenu-a:hover {
+  color: var(--text-hover-color);
+  box-shadow: 0 2px 0 0 currentcolor;
 }
 
 /* ___Parte Responsive 480px(movil)__*/
@@ -158,9 +171,7 @@
   }
   .Container-sub--user {
     height: 2rem;
-  }
-  .Container-sub--search {
-    margin-left: 1rem;
+    margin-top: .4rem;
   }
   .Container-sub--contact {
     display: none;
@@ -168,25 +179,28 @@
   .LandingMenu-svg--contact{
     display: none;
   }
+  .LandingMenu-svg{
+    width: 1.8rem;
+    height: 1.8rem;
+  }
   .Contact-Button{
+    margin-top: .1rem;
     cursor:pointer;
     display: flex;
-    
   }
   .Contact-Button .LandingMenu-svg:hover{
-    fill: aqua;
+    fill: var(--text-hover-color);
   }
   .LandingMenu-Input {
     padding: 1rem;
     font-weight: bold;
-    width: 16rem;
-    height: 2rem;
-    background-color: cadetblue;
+    width: 14rem;
+    height: 1.5rem;
     border-radius: 1rem 0 0 1rem;
   }
   .LandingMenu-logo {
-    height: 4rem;
-    width: 4rem;
+    height: 5rem;
+    width: 7.2rem;
   }
   .LandingMenu-Dropbutton {
     margin-top: .5rem;
@@ -205,7 +219,7 @@
     transition: all 0.5s ease;
   }
   .LandingMenu-nav.isActive {
-    width: 5rem;
+    width: 6rem;
     opacity: 1;
   }
   .LandingMenu-ul {
@@ -213,5 +227,6 @@
   }
   .LandingMenu-li {
     margin: 0.5em 0;
+    font-size: 1.2rem;
   }
 }
