@@ -74,12 +74,12 @@ const LandingMenu = () => {
           <nav className={`LandingMenu-nav ${menu ? "isActive" : ""}`}>
             <ul className="LandingMenu-ul">
               <li className="LandingMenu-li">
-                <NavLink to="/Inicio" className="LandingMenu-a">
+                <NavLink to="/Home" className="LandingMenu-a">
                   Inicio
                 </NavLink>
               </li>
               <li className="LandingMenu-li">
-                <NavLink to="/Sobre" className="LandingMenu-a">
+                <NavLink to="/About" className="LandingMenu-a">
                   Sobre Nosotros
                 </NavLink>
               </li>
