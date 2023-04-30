@@ -1,19 +1,22 @@
-import React from 'react'
-import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import LandingMenu from './LandingMenu/LandingMenu'
-import Home from './Home/Home';
-import About from './AboutUS/About';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { LanguageProvider } from "../context/LanguageContext";
+import LandingMenu from "./LandingMenu/LandingMenu";
+import Home from "./Home/Home";
+import About from "./AboutUS/About";
 const NavMenu = () => {
   return (
-    <BrowserRouter>
-    <LandingMenu/>
+    <LanguageProvider>
+      <BrowserRouter>
+        <LandingMenu />
         <Routes>
-<Route exact path='/' element={<Home/>}/>
-<Route exact path='/Home' element={<Home/>}/>
-<Route exact path='/About' element={<About/>}/>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/Home" element={<Home />} />
+          <Route exact path="/About" element={<About />} />
         </Routes>
-    </BrowserRouter>
-  )
-}
+      </BrowserRouter>
+    </LanguageProvider>
+  );
+};
 
-export default NavMenu
+export default NavMenu;

@@ -1,0 +1,15 @@
+{
+    "LandingMenu": {
+        "searchText" : "search..",
+        "contact": "Contact",
+        "Home" :"Home",
+        "AboutUs" : "About Us",
+        "Catalogue" : "Catalogue",
+        "Payment" : "Payment",
+        "Shipping" : "Shipping"
+    },
+    "Home":{
+        "Home" :"Home"
+    }
+
+}

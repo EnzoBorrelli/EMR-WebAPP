@@ -1,0 +1,14 @@
+{
+    "LandingMenu": {
+        "searchText" : "procurar..",
+        "contact": "Contato",
+        "Home" :"Lar",
+        "AboutUs" : "Sobre Nós",
+        "Catalogue" : "Catálogo",
+        "Payment" : "Pagamento",
+        "Shipping" : "Envios"
+    },
+    "Home":{
+        "Home" :"Lar"
+    }
+}

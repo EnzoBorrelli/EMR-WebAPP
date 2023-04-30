@@ -1,0 +1,14 @@
+{
+    "LandingMenu": {
+        "searchText" : "buscar..",
+        "contact": "Contacto",
+        "Home" :"Inicio",
+        "AboutUs" : "Sobre Nosotros",
+        "Catalogue" : "Catálogo",
+        "Payment" : "Pagos",
+        "Shipping" : "Envios"
+    },
+    "Home":{
+        "Home" :"Casa"
+    }
+}
