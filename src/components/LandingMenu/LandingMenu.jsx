@@ -6,12 +6,21 @@ import logo from "./logo.png";
 
 const LandingMenu = () => {
   const [menu, setMenu] = useState(false);
+  const [fix, setFix] = useState(false);
   const { texts, handleLanguage } = useContext(LanguageContext);
 
   const toggleMenu = () => {
     setMenu(!menu);
   };
-
+  function setFixed(){
+  if(window.scrollY >=100){
+    setFix(true)
+  }
+  else{
+    setFix(false)
+  }
+  }
+window.addEventListener('scroll',setFixed);
   return (
     <header className="LandingMenu">
       <div className="LandingMenu-Container">
@@ -71,7 +80,7 @@ const LandingMenu = () => {
             </a>
           </div>
         </div>
-        <div className="Container-sub--b">
+        <div className={fix ? "Container-sub--b Sub-b--fixed" : "Container-sub--b"}>
           <div className="Container-sub--nav">
             <button onClick={toggleMenu} className="LandingMenu-Dropbutton">
               <svg

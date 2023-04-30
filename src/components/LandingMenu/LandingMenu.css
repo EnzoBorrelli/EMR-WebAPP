@@ -11,7 +11,8 @@
 
 .LandingMenu {
   width: 100%;
-  /*position: fixed;*/
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -31,15 +32,18 @@
   display: flex;
   flex-flow: row nowrap;
   background-color: var(--primary-bg-color);
-  margin: 0.5rem 0;
 }
 .Container-sub--b {
+  width: 100%;
   padding-left: 1rem;
   padding-right: 2rem;
   display: flex;
   flex-flow: row nowrap;
   background-color: var(--secondary-bg-color);
-  margin: 0.5rem 0;
+  margin-bottom: .5rem;
+}
+.Sub-b--fixed{
+  position: fixed;
 }
 .Container-sub--user {
   width: 100%;
