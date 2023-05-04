@@ -1,8 +1,10 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import "./About.css"
+import LanguageContext from '../../context/LanguageContext'
 const About = () => {
+  const {texts} = useContext(LanguageContext)
   return (
-    <div className='divAbout'>About</div>
+    <body className='divAboutUs'>{texts.LandingMenu.AboutUs}</body>
   )
 }
 

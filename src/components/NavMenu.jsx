@@ -7,6 +7,7 @@ import About from "./AboutUS/About";
 import Catalogue from "./Catalogue/Catalogue";
 import Payment from "./Payment/Payment";
 import Shipping from "./Shipping/Shipping"
+import Contact from "./Contact/Contact";
 const NavMenu = () => {
   return (
     <LanguageProvider>
@@ -19,6 +20,7 @@ const NavMenu = () => {
           <Route exact path="/Catalogue" element={<Catalogue/>}/>
           <Route exact path="/Payment" element={<Payment/>}/>
           <Route exact path="/Shipping" element={<Shipping/>}/>
+          <Route exact path="/Contact" element={<Contact/>}/>
         </Routes>
       </BrowserRouter>
     </LanguageProvider>
