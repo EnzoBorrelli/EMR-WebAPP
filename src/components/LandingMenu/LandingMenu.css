@@ -131,6 +131,7 @@
 }
 .LandingMenu-a--contact:hover {
   color: var(--text-hover-color);
+  box-shadow: 0 2px 0 0 currentcolor;
 }
 .Contact-Button {
   display: none;

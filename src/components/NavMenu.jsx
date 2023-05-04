@@ -2,12 +2,12 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "../context/LanguageContext";
 import LandingMenu from "./LandingMenu/LandingMenu";
-import Home from "./Home/Home";
-import About from "./AboutUS/About";
-import Catalogue from "./Catalogue/Catalogue";
-import Payment from "./Payment/Payment";
-import Shipping from "./Shipping/Shipping"
-import Contact from "./Contact/Contact";
+import Home from "./Sections/Home/Home";
+import About from "./Sections/AboutUS/About";
+import Catalogue from "./Sections/Catalogue/Catalogue";
+import Payment from "./Sections/Payment/Payment";
+import Shipping from "./Sections/Shipping/Shipping"
+import Contact from "./Sections/Contact/Contact";
 const NavMenu = () => {
   return (
     <LanguageProvider>
