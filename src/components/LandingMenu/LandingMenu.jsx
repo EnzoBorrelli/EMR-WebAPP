@@ -111,17 +111,17 @@ window.addEventListener('scroll',setFixed);
                   </NavLink>
                 </li>
                 <li className="LandingMenu-li">
-                  <NavLink to="/" className="LandingMenu-a">
+                  <NavLink to="/Catalogue" className="LandingMenu-a">
                   {texts.LandingMenu.Catalogue}
                   </NavLink>
                 </li>
                 <li className="LandingMenu-li">
-                  <NavLink to="/" className="LandingMenu-a">
+                  <NavLink to="/Payment" className="LandingMenu-a">
                   {texts.LandingMenu.Payment}
                   </NavLink>
                 </li>
                 <li className="LandingMenu-li">
-                  <NavLink to="/" className="LandingMenu-a">
+                  <NavLink to="/Shipping" className="LandingMenu-a">
                   {texts.LandingMenu.Shipping}
                   </NavLink>
                 </li>

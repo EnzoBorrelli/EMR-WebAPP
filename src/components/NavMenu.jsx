@@ -4,6 +4,9 @@ import { LanguageProvider } from "../context/LanguageContext";
 import LandingMenu from "./LandingMenu/LandingMenu";
 import Home from "./Home/Home";
 import About from "./AboutUS/About";
+import Catalogue from "./Catalogue/Catalogue";
+import Payment from "./Payment/Payment";
+import Shipping from "./Shipping/Shipping"
 const NavMenu = () => {
   return (
     <LanguageProvider>
@@ -13,6 +16,9 @@ const NavMenu = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/Home" element={<Home />} />
           <Route exact path="/About" element={<About />} />
+          <Route exact path="/Catalogue" element={<Catalogue/>}/>
+          <Route exact path="/Payment" element={<Payment/>}/>
+          <Route exact path="/Shipping" element={<Shipping/>}/>
         </Routes>
       </BrowserRouter>
     </LanguageProvider>
