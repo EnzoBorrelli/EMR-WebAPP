@@ -8,7 +8,30 @@
         "Payment" : "Pagamento",
         "Shipping" : "Envios"
     },
-    "Home":{
-        "Home" :"Lar"
+    "sections":{
+        "Home":{
+            "Home" :"Casa"
+        },
+        "AboutUs":{
+    
+    
+        },
+        "Catalogue":{
+    
+        },
+        "Payment":{
+    
+        },
+        "shipping":{
+    
+        }
+    },
+    "User":{
+        "Nav":{
+
+        },
+        "sections":{
+            
+        }
     }
 }

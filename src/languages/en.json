@@ -8,8 +8,31 @@
         "Payment" : "Payment",
         "Shipping" : "Shipping"
     },
-    "Home":{
-        "Home" :"Home"
+    "sections":{
+        "Home":{
+            "Home" :"Casa"
+        },
+        "AboutUs":{
+    
+    
+        },
+        "Catalogue":{
+    
+        },
+        "Payment":{
+    
+        },
+        "shipping":{
+    
+        }
+    },
+    "User":{
+        "Nav":{
+
+        },
+        "sections":{
+            
+        }
     }
 
 }
