@@ -28,6 +28,7 @@
     },
     "User":{
         "Nav":{
+            "SingIn": "Acessar"
 
         },
         "sections":{

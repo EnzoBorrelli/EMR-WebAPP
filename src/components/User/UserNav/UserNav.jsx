@@ -1,12 +1,16 @@
-import React,{useContext} from 'react'
-import LanguageContext from '../../../context/LanguageContext'
-import './UserNav.css'
+import React, { useContext } from "react";
+import LanguageContext from "../../../context/LanguageContext";
+import "./UserNav.css";
 
-const UserNav = () => {
-    const {texts} =useContext(LanguageContext)
+const UserNav = (props) => {
+  const { texts } = useContext(LanguageContext);
   return (
-    <div>UserNav</div>
-  )
-}
+      <nav className={`UserNav-nav ${props.Toggle ? "isActive" : ""}`}>
+        <ul className="UserNav-ul">
+          <li className="UserNav-li">{texts.User.Nav.SingIn}</li>
+        </ul>
+      </nav>
+  );
+};
 
-export default UserNav
+export default UserNav;

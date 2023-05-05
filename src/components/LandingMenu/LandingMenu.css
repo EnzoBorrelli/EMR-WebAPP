@@ -34,6 +34,7 @@
   background-color: var(--primary-bg-color);
 }
 .Container-sub--b {
+  height: 3.2rem;
   width: 100%;
   padding-left: 1rem;
   padding-right: 2rem;
@@ -92,6 +93,13 @@
 }
 .LandingMenu-UserBtn {
   cursor: pointer;
+  display: flex;
+  margin-top: .3rem;
+}
+.Container-UserNav{
+  display: block;
+  position: relative;
+  
 }
 .LandingMenu-logo {
   height: 7rem;
@@ -141,13 +149,13 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary-bg-color);
+  
 }
 .LandingMenu-li {
   font-weight: bold;
   font-size: 1.4rem;
   text-align: center;
-  margin: 0 2rem;
+  margin: .2rem 2rem;
 }
 .LandingMenu-ul:hover .LandingMenu-a {
   color: var(--text-disabled);
@@ -265,6 +273,7 @@ a.active {
   }
   .LandingMenu-ul {
     flex-direction: column;
+    background-color: var(--secondary-bg-color);
   }
   .LandingMenu-li {
     margin: 0.5em 0;
