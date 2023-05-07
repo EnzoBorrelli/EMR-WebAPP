@@ -29,6 +29,10 @@
   font-size: 1.4rem;
   text-align: center;
   margin: .1rem;
+  cursor: pointer;
+}
+.UserNav-li:hover{
+  color:var(--text-hover-color)
 }
 
 @media screen and (max-width:480px) {
