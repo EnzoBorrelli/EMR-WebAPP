@@ -28,7 +28,8 @@
     },
     "User":{
         "Nav":{
-            "SingIn": "SingIn"
+            "SingIn": "SingIn",
+            "SingOut": "SingOut"
 
         },
         "sections":{

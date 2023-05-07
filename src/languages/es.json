@@ -28,7 +28,8 @@
     },
     "User":{
         "Nav":{
-            "SingIn": "Acceder"
+            "SingIn": "Acceder",
+            "SingOut": "Salir"
 
         },
         "sections":{
