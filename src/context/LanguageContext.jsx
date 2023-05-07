@@ -14,13 +14,16 @@ const LanguageProvider = ({ children }) => {
     if (e.target.value === "es") {
       setLanguage("es");
       setTexts(LanguageList.es);
+      document.title="EM Robots - tienda virtual"
     } else if(e.target.value === "en") {
       setLanguage("en");
       setTexts(LanguageList.en);
+      document.title="EM Robots - virtual shop"
     }
     else{
       setLanguage("br");
       setTexts(LanguageList.br);
+      document.title="EM Robots - loja virtual"
     }
   };
 

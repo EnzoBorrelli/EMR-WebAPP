@@ -29,7 +29,8 @@
     "User":{
         "Nav":{
             "SingIn": "Acceder",
-            "SingOut": "Salir"
+            "SingOut": "Salir",
+            "Profile": "Perfil"
 
         },
         "sections":{

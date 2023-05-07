@@ -120,6 +120,11 @@
   width: 1.5rem;
   height: 1.5rem;
 }
+.User_img{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1.5rem;
+}
 .LandingMenu-svg--user:hover {
   fill: var(--text-hover-color);
 }
@@ -220,6 +225,10 @@ a.active {
   .Container-sub--user {
     height: 2rem;
     margin-top: 0.4rem;
+  }
+  .User_img{
+    width: 1.8rem;
+    height: 1.8rem;
   }
   .Container-sub--contact {
     display: none;
