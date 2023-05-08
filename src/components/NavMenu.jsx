@@ -8,7 +8,8 @@ import Catalogue from "./Sections/Catalogue/Catalogue";
 import Payment from "./Sections/Payment/Payment";
 import Shipping from "./Sections/Shipping/Shipping";
 import Contact from "./Sections/Contact/Contact";
-import UserProfile from "./User/UserNav/UserProfile/UserProfile";
+import UserProfile from "./User/Sections/UserProfile/UserProfile";
+
 const NavMenu = () => {
   return (
     <LanguageProvider>
@@ -22,7 +23,7 @@ const NavMenu = () => {
           <Route exact path="/Payment" element={<Payment />} />
           <Route exact path="/Shipping" element={<Shipping />} />
           <Route exact path="/Contact" element={<Contact />} />
-          <Route exact path="/Profile" element={<UserProfile />} />
+          <Route exact path="/:user/Profile" element={< UserProfile/>} />
         </Routes>
       </BrowserRouter>
     </LanguageProvider>

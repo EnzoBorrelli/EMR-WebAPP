@@ -8,15 +8,24 @@ const UserNav = (props) => {
   const { texts } = useContext(LanguageContext);
   const { loginWithRedirect } = useAuth0();
   const { logout } = useAuth0();
-  const {isAuthenticated} = useAuth0();
+  const { isAuthenticated, user } = useAuth0();
 
   return (
-    <nav className={`UserNav-nav ${props.Toggle ? "isActive" : ""}`}>
+    <nav className={`UserNav-nav ${props.Toggle ? (isAuthenticated ? "isActive" : "isActiveLog") : ""}`}>
       <ul className="UserNav-ul">
         {isAuthenticated ? (
           <>
-            <NavLink to="/Profile/" className="UserNav-li">
-            {texts.User.Nav.Profile}
+            <NavLink to={`/${user.name}/Profile`} className="UserNav-li">
+              {texts.User.Nav.Profile}
+            </NavLink>
+            <NavLink to={`/${user.name}/Orders`} className="UserNav-li">
+              {texts.User.Nav.Orders}
+            </NavLink>
+            <NavLink to={`/${user.name}/ShippingAdress`} className="UserNav-li">
+              {texts.User.Nav.ShippingAdress}
+            </NavLink>
+            <NavLink to={`/${user.name}/PaymentMethods`} className="UserNav-li">
+              {texts.User.Nav.PaymentMethods}
             </NavLink>
             <button
               onClick={() =>

@@ -28,9 +28,13 @@
     },
     "User":{
         "Nav":{
-            "SingIn": "SingIn",
+            "SingIn": "Acceder",
             "SingOut": "SingOut",
-            "Profile": "Profile"
+            "Profile": "Account",
+            "Orders":"Orders",
+            "ShippingAdress":"Shipping Adress",
+            "paymentMethods": "Payment Methods"
+
 
         },
         "sections":{

@@ -29,8 +29,11 @@
     "User":{
         "Nav":{
             "SingIn": "Acceder",
-            "SingOut": "Salir",
-            "Profile": "Perfil"
+            "SingOut": "Cerrar sesión",
+            "Profile": "Cuenta",
+            "Orders":"Pedidos",
+            "ShippingAdress":"Dirección de Envío",
+            "paymentMethods": "Métodos de pago"
 
         },
         "sections":{

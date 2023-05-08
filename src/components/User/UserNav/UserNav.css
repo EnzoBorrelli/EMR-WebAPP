@@ -1,5 +1,5 @@
 .UserNav-nav {
-  width: 100%;
+  width: 8rem;
 
   display: flex;
   flex-flow: column nowrap;
@@ -13,30 +13,41 @@
   overflow: hidden;
   transition: all 0.5s ease;
 }
+
 .UserNav-nav.isActive {
-  height:5rem;
+  height: 11rem;
   opacity: 1;
 }
+
+.UserNav-nav.isActiveLog {
+  height: 3rem;
+  opacity: 1;
+}
+
 .UserNav-ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: .2rem;
 }
+
 .UserNav-li {
   font-weight: bold;
   font-size: 1.4rem;
   text-align: center;
   margin: .1rem;
   cursor: pointer;
+  transition: all 0.5s ease;
+
 }
-.UserNav-li:hover{
-  color:var(--text-hover-color)
+
+.UserNav-li:hover {
+  color: var(--text-hover-color);
+  box-shadow: 0 2px 0 0 currentcolor;
 }
 
 @media screen and (max-width:480px) {
-  .UserNav-li{
+  .UserNav-li {
     font-size: 1rem;
   }
 }

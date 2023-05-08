@@ -28,9 +28,13 @@
     },
     "User":{
         "Nav":{
-            "SingIn": "Acessar",
-            "SingOut": "Deslogar",
-            "Profile": "Perfil"
+            "SingIn": "Accesar",
+            "SingOut": "fechar Sessão",
+            "Profile": "Conta",
+            "Orders":"Ordens",
+            "ShippingAdress":"Endereço para envio",
+            "paymentMethods": "métodos de pagamento"
+
 
         },
         "sections":{

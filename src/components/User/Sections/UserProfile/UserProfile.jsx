@@ -6,11 +6,12 @@ import "./UserProfile.css";
 const UserProfile = () => {
   const { texts } = useContext(LanguageContext);
   const { user } = useAuth0();
-  
+
   return (
-    <body>
-      <div className="UserProfile">{user.name}</div>
+    <body className="UserProfile">
+  
     </body>
+
   );
 };
 
