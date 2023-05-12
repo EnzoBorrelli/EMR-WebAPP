@@ -8,10 +8,9 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 const LandingMenu = () => {
   const [menu, setMenu] = useState(false);
-  const [fix, setFix] = useState(false);
   const [UserToggle, setUserToggle] = useState(false);
   const { texts, handleLanguage } = useContext(LanguageContext);
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { user, isAuthenticated} = useAuth0();
 
   const toggleMenu = () => {
     setMenu(!menu);
@@ -19,14 +18,7 @@ const LandingMenu = () => {
   const toggleUser = () => {
     setUserToggle(!UserToggle);
   };
-  function setFixed() {
-    if (window.scrollY >= 100) {
-      setFix(true);
-    } else {
-      setFix(false);
-    }
-  }
-  window.addEventListener("scroll", setFixed);
+
   return (
     <header className="LandingMenu">
       <div className="LandingMenu-Container">
@@ -95,7 +87,7 @@ const LandingMenu = () => {
           </div>
         </div>
         <div
-          className={fix ? "Container-sub--b Sub-b--fixed" : "Container-sub--b"}
+          className="Container-sub--b"
         >
           <div className="Container-sub--nav">
             <button onClick={toggleMenu} className="LandingMenu-Dropbutton">

@@ -1,11 +1,89 @@
-.UserProfile{
-    width: 100%;
-    height: 1000px;
-    background-color: black;
-    font-size: 5rem;
-    font-weight: bold;
+.Profile {
+  width: 100%;
+  height: 1000px;
+  background-color: var(--terciary-bg-color);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+}
+.Profile-Card {
+  background-color: var(--secondary-bg-color);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.Profile-Header {
+  display: flex;
+  flex-direction: row;
+}
+
+.Profile-ImgDiv {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Profile-UserImg {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+}
+
+.Profile-imgUpload {
+  width: 12rem;
+  height: 3rem;
+  margin: 1rem;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  background-color: var(--light-tone);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.Profile-UploadText {
+  display: inline;
+}
+.Profile-SVGupload {
+  display: none;
+  width: 2rem;
+  height: 0;
+}
+
+.Profile-imgUpload:hover {
+  background-color: var(--hover-tone);
+}
+.Profile-imgUpload:hover .Profile-UploadText {
+  display: none;
+}
+.Profile-imgUpload:hover .Profile-SVGupload {
+  display: inline;
+  height: 2rem;
+}
+
+.Profile-ID {
     display: flex;
-    align-items:center ;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items:flex-start;
+    margin: 1rem;
+}
+
+.Profile-Name {
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.Profile-status {
+    font-size: 1.3rem;
+    margin: 1rem;
+    color:rgb(218, 82, 82)
+}
+.Profile-status.isActive {
+    font-size: 1.3rem;
+    margin: 1rem;
+    color:rgb(125, 218, 82)
 }

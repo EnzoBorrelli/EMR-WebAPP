@@ -15,6 +15,7 @@ const NavMenu = () => {
     <LanguageProvider>
       <BrowserRouter>
         <LandingMenu />
+        <span>a</span>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/Home" element={<Home />} />

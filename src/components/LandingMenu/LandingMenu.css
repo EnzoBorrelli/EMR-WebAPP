@@ -11,7 +11,7 @@
 
 .LandingMenu {
   width: 100%;
-  position: relative;
+  position: fixed;
   z-index: 1;
   display: flex;
   flex-flow: row wrap;
@@ -43,9 +43,7 @@
   background-color: var(--secondary-bg-color);
   margin-bottom: .5rem;
 }
-.Sub-b--fixed{
-  position: fixed;
-}
+
 .Container-sub--user {
   width: 100%;
   display: flex;
