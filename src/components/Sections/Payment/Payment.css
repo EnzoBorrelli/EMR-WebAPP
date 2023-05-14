@@ -1,5 +1,19 @@
-.divPayment{
-    font-size: 30rem;
-    background-color: purple;
-    height: 2000px;
+:root {
+  --light-bg-color: #e1efe0;
+  --light-secondary-color: #b6c4b5;
+  --light-terciary-color: #96a395;
+  --primary-text-color: #171918;
+  --secondary-text-color: #303633;
+  --disabled-text-color: #47524d;
+  --hover-text-tone: #2bd91d;
+  --hover-color: #79d172;
+}
+
+.divPayment {
+    width: 100%;
+    height: auto;
+  background-color: var(--light-bg-color);
+  font-size: 2rem;
+  margin: 1rem;
+  color: black;
 }

@@ -15,16 +15,16 @@ const UserNav = (props) => {
       <ul className="UserNav-ul">
         {isAuthenticated ? (
           <>
-            <NavLink to={`/${user.name}/Profile`} className="UserNav-li">
+            <NavLink to={`/${user.nickname}/Profile`} className="UserNav-li">
               {texts.User.Nav.Profile}
             </NavLink>
-            <NavLink to={`/${user.name}/Orders`} className="UserNav-li">
+            <NavLink to={`/${user.nickname}/Orders`} className="UserNav-li">
               {texts.User.Nav.Orders}
             </NavLink>
-            <NavLink to={`/${user.name}/ShippingAdress`} className="UserNav-li">
+            <NavLink to={`/${user.nickname}/ShippingAdress`} className="UserNav-li">
               {texts.User.Nav.ShippingAdress}
             </NavLink>
-            <NavLink to={`/${user.name}/PaymentMethods`} className="UserNav-li">
+            <NavLink to={`/${user.nickname}/PaymentMethods`} className="UserNav-li">
               {texts.User.Nav.PaymentMethods}
             </NavLink>
             <button

@@ -1,45 +1,33 @@
 {
-    "LandingMenu": {
-        "searchText" : "search..",
-        "contact": "Contact",
-        "Home" :"Home",
-        "AboutUs" : "About Us",
-        "Catalogue" : "Catalogue",
-        "Payment" : "Payment",
-        "Shipping" : "Shipping"
+  "LandingMenu": {
+    "searchText": "search..",
+    "contact": "Contact",
+    "Home": "Home",
+    "AboutUs": "About Us",
+    "Catalogue": "Catalogue",
+    "Payment": "Payment",
+    "Shipping": "Shipping"
+  },
+  "sections": {
+    "Home": {
+      "Home": "Casa"
     },
-    "sections":{
-        "Home":{
-            "Home" :"Casa"
-        },
-        "AboutUs":{
-    
-    
-        },
-        "Catalogue":{
-    
-        },
-        "Payment":{
-    
-        },
-        "shipping":{
-    
-        }
+    "AboutUs": {},
+    "Catalogue": {},
+    "Payment": {},
+    "shipping": {}
+  },
+  "User": {
+    "Nav": {
+      "SingIn": "Acceder",
+      "SingOut": "SingOut",
+      "Profile": "Account",
+      "Orders": "Orders",
+      "ShippingAdress": "Shipping Adress",
+      "paymentMethods": "Payment Methods"
     },
-    "User":{
-        "Nav":{
-            "SingIn": "Acceder",
-            "SingOut": "SingOut",
-            "Profile": "Account",
-            "Orders":"Orders",
-            "ShippingAdress":"Shipping Adress",
-            "paymentMethods": "Payment Methods"
-
-
-        },
-        "sections":{
-            
-        }
+    "sections": {
+      "uploadImage": "upload Image"
     }
-
+  }
 }

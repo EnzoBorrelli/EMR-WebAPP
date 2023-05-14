@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "../context/LanguageContext";
+import { CurrencyProvider } from "../context/CurrencyContext";
 import LandingMenu from "./LandingMenu/LandingMenu";
 import Home from "./Sections/Home/Home";
 import About from "./Sections/AboutUS/About";
@@ -13,6 +14,7 @@ import UserProfile from "./User/Sections/UserProfile/UserProfile";
 const NavMenu = () => {
   return (
     <LanguageProvider>
+    <CurrencyProvider>
       <BrowserRouter>
         <LandingMenu />
         <span>a</span>
@@ -27,6 +29,7 @@ const NavMenu = () => {
           <Route exact path="/:user/Profile" element={< UserProfile/>} />
         </Routes>
       </BrowserRouter>
+      </CurrencyProvider>
     </LanguageProvider>
   );
 };

@@ -1,44 +1,33 @@
 {
-    "LandingMenu": {
-        "searchText" : "procurar..",
-        "contact": "Contato",
-        "Home" :"Lar",
-        "AboutUs" : "Sobre Nós",
-        "Catalogue" : "Catálogo",
-        "Payment" : "Pagamento",
-        "Shipping" : "Envios"
+  "LandingMenu": {
+    "searchText": "procurar..",
+    "contact": "Contato",
+    "Home": "Lar",
+    "AboutUs": "Sobre Nós",
+    "Catalogue": "Catálogo",
+    "Payment": "Pagamento",
+    "Shipping": "Envios"
+  },
+  "sections": {
+    "Home": {
+      "Home": "Casa"
     },
-    "sections":{
-        "Home":{
-            "Home" :"Casa"
-        },
-        "AboutUs":{
-    
-    
-        },
-        "Catalogue":{
-    
-        },
-        "Payment":{
-    
-        },
-        "shipping":{
-    
-        }
+    "AboutUs": {},
+    "Catalogue": {},
+    "Payment": {},
+    "shipping": {}
+  },
+  "User": {
+    "Nav": {
+      "SingIn": "Accesar",
+      "SingOut": "fechar Sessão",
+      "Profile": "Conta",
+      "Orders": "Ordens",
+      "ShippingAdress": "Endereço para envio",
+      "paymentMethods": "métodos de pagamento"
     },
-    "User":{
-        "Nav":{
-            "SingIn": "Accesar",
-            "SingOut": "fechar Sessão",
-            "Profile": "Conta",
-            "Orders":"Ordens",
-            "ShippingAdress":"Endereço para envio",
-            "paymentMethods": "métodos de pagamento"
-
-
-        },
-        "sections":{
-            
-        }
+    "sections": {
+      "uploadImage": "Enviar Imagem"
     }
+  }
 }

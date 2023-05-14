@@ -1,44 +1,33 @@
 {
-    "LandingMenu": {
-        "searchText" : "buscar..",
-        "contact": "Contacto",
-        "Home" :"Inicio",
-        "AboutUs" : "Sobre Nosotros",
-        "Catalogue" : "Catálogo",
-        "Payment" : "Pagos",
-        "Shipping" : "Envios"
+  "LandingMenu": {
+    "searchText": "buscar..",
+    "contact": "Contacto",
+    "Home": "Inicio",
+    "AboutUs": "Sobre Nosotros",
+    "Catalogue": "Catálogo",
+    "Payment": "Pagos",
+    "Shipping": "Envios"
+  },
+  "sections": {
+    "Home": {
+      "Home": "Casa"
     },
-    "sections":{
-        "Home":{
-            "Home" :"Casa"
-        },
-        "AboutUs":{
-    
-    
-        },
-        "Catalogue":{
-    
-        },
-        "Payment":{
-    
-        },
-        "shipping":{
-    
-        }
+    "AboutUs": {},
+    "Catalogue": {},
+    "Payment": {},
+    "shipping": {}
+  },
+  "User": {
+    "Nav": {
+      "SingIn": "Acceder",
+      "SingOut": "Cerrar sesión",
+      "Profile": "Cuenta",
+      "Orders": "Pedidos",
+      "ShippingAdress": "Dirección de Envío",
+      "paymentMethods": "Métodos de pago"
     },
-    "User":{
-        "Nav":{
-            "SingIn": "Acceder",
-            "SingOut": "Cerrar sesión",
-            "Profile": "Cuenta",
-            "Orders":"Pedidos",
-            "ShippingAdress":"Dirección de Envío",
-            "paymentMethods": "Métodos de pago"
-
-        },
-        "sections":{
-            
-        }
+    "sections": {
+      "uploadImage": "subir Imagen"
     }
-    
+  }
 }
