@@ -1,0 +1,46 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.FooterPage {
+    width: 100%;
+    height: 2rem;
+    color: var(--disabled-text-color);
+    border-top: 2px solid var(--light-secondary-color);
+}
+
+.Footer-div {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.Footer-h1 {
+    width: fit-content;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.Footer-svg{
+    width: 1rem;
+    height: 2rem;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  .scroll-to-top:hover {
+    opacity: 1;
+  }

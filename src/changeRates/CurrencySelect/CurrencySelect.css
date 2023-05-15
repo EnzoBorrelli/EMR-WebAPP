@@ -12,6 +12,7 @@
   border: 2px solid var(--secondary-text-color);
   border-radius: .5rem;
   margin: 0 .5rem;
+  color: var(--primary-text-color);
 }
 
 .Currency-h3 {

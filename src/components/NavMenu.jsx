@@ -10,6 +10,7 @@ import Payment from "./Sections/Payment/Payment";
 import Shipping from "./Sections/Shipping/Shipping";
 import Contact from "./Sections/Contact/Contact";
 import UserProfile from "./User/Sections/UserProfile/UserProfile";
+import PageFooter from "./PageFooter/PageFooter";
 
 const NavMenu = () => {
 
@@ -28,6 +29,7 @@ const NavMenu = () => {
             <Route exact path="/Contact" element={<Contact />} />
             <Route exact path="/:user/Profile" element={< UserProfile />} />
           </Routes>
+          <PageFooter></PageFooter>
         </BrowserRouter>
       </CurrencyProvider>
     </LanguageProvider>
