@@ -14,20 +14,31 @@
     },
     "AboutUs": {},
     "Catalogue": {},
-    "Payment": {},
+    "Payment": {
+      "Title": "Formas de pago",
+      "details": "detallaremos las formas de pagos disponibles:",
+      "cards": "Tarjetas de credito/debito",
+      "cardsDetails": "Aceptamos todas las tarjetas de crédito y debito!",
+      "Wallet": "Mercado Pago",
+      "WalletDetails": "Aceptamos Mecadopago tanto tarjetas asociadas, como dinero en cuenta y todos los medios asociados.",
+      "wireTransfer": "Transferencia bancaria",
+      "WireDetails": "Aceptamos transferencias bancarias en pesos o dólares realizadas en el mismo día de la compra. Los datos de las cuentas son enviados al finalizar la compra por email. Verificamos la acreditación dentro de las 24hs. hábiles.",
+      "InvoiceTypes": "Tipos de facturas",
+      "InvoiceDetails": "Podemos emitir factura tipo A o B."
+    },
     "shipping": {}
   },
-  "User": {
-    "Nav": {
-      "SingIn": "Acceder",
-      "SingOut": "Cerrar sesión",
-      "Profile": "Cuenta",
-      "Orders": "Pedidos",
-      "ShippingAdress": "Dirección de Envío",
-      "paymentMethods": "Métodos de pago"
-    },
-    "sections": {
-      "uploadImage": "subir Imagen"
-    }
+"User": {
+  "Nav": {
+    "SingIn": "Acceder",
+    "SingOut": "Cerrar sesión",
+    "Profile": "Cuenta",
+    "Orders": "Pedidos",
+    "ShippingAdress": "Dirección de Envío",
+    "paymentMethods": "Métodos de pago"
+  },
+  "sections": {
+    "uploadImage": "subir Imagen"
   }
+}
 }

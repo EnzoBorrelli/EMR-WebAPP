@@ -25,7 +25,7 @@ const UserNav = (props) => {
               {texts.User.Nav.ShippingAdress}
             </NavLink>
             <NavLink to={`/${user.nickname}/PaymentMethods`} className="UserNav-li">
-              {texts.User.Nav.PaymentMethods}
+              {texts.User.Nav.paymentMethods}
             </NavLink>
             <button
               onClick={() =>

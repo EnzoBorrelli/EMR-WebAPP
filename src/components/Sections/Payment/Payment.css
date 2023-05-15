@@ -9,11 +9,37 @@
   --hover-color: #79d172;
 }
 
-.divPayment {
-    width: 100%;
-    height: auto;
+.Payment {
+  width: 100%;
+  height: 100%;
   background-color: var(--light-bg-color);
   font-size: 2rem;
+  padding: 1rem;
+  color: var(--primary-text-color);
+}
+
+.Payment-h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
   margin: 1rem;
-  color: black;
+}
+
+.Payment-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2rem;
+}
+
+.Payment-p {
+  font-size: 1rem;
+  margin: .5rem;
+  color: var(--secondary-text-color);
+}
+
+.Payment-h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: .5rem;
 }

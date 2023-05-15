@@ -12,23 +12,23 @@ import Contact from "./Sections/Contact/Contact";
 import UserProfile from "./User/Sections/UserProfile/UserProfile";
 
 const NavMenu = () => {
+
   return (
     <LanguageProvider>
-    <CurrencyProvider>
-      <BrowserRouter>
-        <LandingMenu />
-        <span>a</span>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/Home" element={<Home />} />
-          <Route exact path="/About" element={<About />} />
-          <Route exact path="/Catalogue" element={<Catalogue />} />
-          <Route exact path="/Payment" element={<Payment />} />
-          <Route exact path="/Shipping" element={<Shipping />} />
-          <Route exact path="/Contact" element={<Contact />} />
-          <Route exact path="/:user/Profile" element={< UserProfile/>} />
-        </Routes>
-      </BrowserRouter>
+      <CurrencyProvider>
+        <BrowserRouter>
+          <LandingMenu />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/Home" element={<Home />} />
+            <Route exact path="/About" element={<About />} />
+            <Route exact path="/Catalogue" element={<Catalogue />} />
+            <Route exact path="/Payment" element={<Payment />} />
+            <Route exact path="/Shipping" element={<Shipping />} />
+            <Route exact path="/Contact" element={<Contact />} />
+            <Route exact path="/:user/Profile" element={< UserProfile />} />
+          </Routes>
+        </BrowserRouter>
       </CurrencyProvider>
     </LanguageProvider>
   );

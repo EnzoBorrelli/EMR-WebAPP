@@ -14,7 +14,18 @@
     },
     "AboutUs": {},
     "Catalogue": {},
-    "Payment": {},
+    "Payment": {
+      "Title": "formas de pagamento",
+      "details": "Vamos detalhar os métodos de pagamento disponíveis:",
+      "cards": "Cartões de crédito/débito",
+      "cardsDetails": "Aceitamos todos os cartões de crédito e débito!",
+      "Wallet": "Mercado Pago",
+      "WalletDetails": "Aceitamos cartões associados à Mecadopago, bem como dinheiro em conta e todos os meios associados.",
+      "wireTransfer": "Transferência bancária",
+      "WireDetails": "Aceitamos transferências bancárias em pesos ou dólares feitas no mesmo dia da compra. Os dados da conta são enviados no final da compra por e-mail. Verificamos o credenciamento em até 24 horas. hábeis.",
+      "InvoiceTypes": "Tipos de faturas",
+      "InvoiceDetails": "Podemos emitir nota fiscal tipo A ou B."
+    },
     "shipping": {}
   },
   "User": {
