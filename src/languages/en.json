@@ -19,14 +19,25 @@
       "details": "We will detail the available payment methods:",
       "cards": "Credit/debit cards",
       "cardsDetails": "We accept all credit cards and debit cards!",
-      "Wallet": "Paypal",
-      "WalletDetails": "We accept Paypal as money in account and all associated means.",
+      "Wallet": "Paypal/ Mercado Pago",
+      "WalletDetails": "We accept Paypal / Mercado pago as money in account and all associated means.",
       "wireTransfer": "Wire Transfer",
       "WireDetails": "We accept bank transfers in pesos or dollars made on the same day of purchase. The account data is sent at the end of the purchase by email. We verify the accreditation within 24 hours.",
       "InvoiceTypes": "Types of invoices",
-      "InvoiceDetails": "We can issue type A or B invoice."
+      "InvoiceDetails": "We can issue type C invoice."
     },
-    "shipping": {}
+    "Shipping": {
+      "Title": "Shipping Methods",
+      "details": "We will detail the available shipping methods:",
+      "typeOne": "Type one",
+      "typeOneDetails": "details about this type",
+      "typeTwo": "type two",
+      "typeTwoDetails": "details about that type",
+      "typeThree": "type three",
+      "typeThreeDetails": "details",
+      "typeFour": "in person",
+      "typeFourDetails": "you wont have this option"
+    }
   },
   "User": {
     "Nav": {

@@ -1,46 +1,83 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .FooterPage {
-    width: 100%;
-    height: 2rem;
-    color: var(--disabled-text-color);
-    border-top: 2px solid var(--light-secondary-color);
+  width: 100%;
+  height: 2rem;
+  color: var(--disabled-text-color);
+  border-top: 2px solid var(--light-secondary-color);
 }
 
 .Footer-div {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .Footer-h1 {
-    width: fit-content;
-    margin: 1rem;
-    font-size: 1rem;
-    font-weight: bolder;
+  width: fit-content;
+  margin: 1rem;
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.Footer-h1::selection{
+    background-color: rgba(75, 218, 80, 0.779);
 }
 
-.Footer-svg{
-    width: 1rem;
-    height: 2rem;
+.Footer-svg {
+  width: 1rem;
+  height: 2rem;
 }
 
 .scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 100%;
-    cursor: pointer;
-    opacity: 0.7;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.scroll-to-top:hover {
+  opacity: 1;
+}
+
+.Footer-imgPaypal {
+  display: flex;
+  width: 10rem;
+  height: 5rem;
+  margin: 0 1rem;
+}
+.Footer-imgMer {
+  display: flex;
+  width: 5rem;
+  height: 2.5rem;
+  margin: 0 1rem;
+}
+
+.FooterImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 480px) {
+  .Footer-h1{
+    margin: 0;
+    margin-left: 1rem;
   }
-  
-  .scroll-to-top:hover {
-    opacity: 1;
+  .Footer-imgPaypal {
+    margin: 0;
   }
+  .Footer-imgMer {
+    margin: 0;
+  }
+}

@@ -1,5 +1,74 @@
-.divShipping{
-    font-size: 30rem;
-    background-color: greenyellow;
-    height: 2000px;
-}
+.Shipping {
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-bg-color);
+    font-size: 2rem;
+    padding: 1rem;
+    color: var(--primary-text-color);
+  }
+  
+  .Shipping-h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 1rem;
+  }
+  .Shipping-h1::selection {
+    background-color: var(--secondary-bg-color);
+    color: var(--text-disabled);
+  }
+  
+  .Shipping-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2rem;
+  }
+  .Shipping-pi {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem;
+    color: var(--secondary-text-color);
+  }
+  .Shipping-p {
+    font-size: 1rem;
+    margin: 0.5rem;
+    color: var(--secondary-text-color);
+  }
+  .Shipping-p::selection {
+    background-color: var(--secondary-bg-color);
+    color: var(--text-disabled);
+  }
+  
+  .Shipping-h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem;
+  }
+  .Shipping-h2::selection {
+    background-color: var(--secondary-bg-color);
+    color: var(--text-disabled);
+  }
+  
+  @media screen and (max-width: 480px) {
+    .Shipping-h1 {
+      font-size: 2.5rem;
+      margin: 1rem;
+    }
+  
+    .Shipping-div {
+      display: flex;
+      margin-left: .5rem;
+    }
+    
+    .Shipping-p {
+      font-size: 1rem;
+      margin: 0.5rem;
+    }
+    
+    .Shipping-h2 {
+      font-size: 1.5rem;
+      margin: 0.5rem;
+    }
+  
+  }

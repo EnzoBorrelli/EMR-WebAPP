@@ -11,6 +11,7 @@ import Shipping from "./Sections/Shipping/Shipping";
 import Contact from "./Sections/Contact/Contact";
 import UserProfile from "./User/Sections/UserProfile/UserProfile";
 import PageFooter from "./PageFooter/PageFooter";
+import PaymentMethods from "./User/Sections/PaymentMethods/PaymentMethods";
 
 const NavMenu = () => {
 
@@ -28,6 +29,7 @@ const NavMenu = () => {
             <Route exact path="/Shipping" element={<Shipping />} />
             <Route exact path="/Contact" element={<Contact />} />
             <Route exact path="/:user/Profile" element={< UserProfile />} />
+            <Route exact path="/:user/PaymentMethods" element={< PaymentMethods />} />
           </Routes>
           <PageFooter></PageFooter>
         </BrowserRouter>

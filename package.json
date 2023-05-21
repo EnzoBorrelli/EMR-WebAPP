@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.1.0",
+    "@mercadopago/sdk-react": "^0.0.9",
     "axios": "^1.4.0",
     "firebase": "^9.21.0",
+    "mercadopago": "^1.5.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0"

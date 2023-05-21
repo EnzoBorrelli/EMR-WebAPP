@@ -1,0 +1,8 @@
+.paymentMethods {
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-bg-color);
+  font-size: 2rem;
+  padding: 1rem;
+  color: var(--primary-text-color);
+}

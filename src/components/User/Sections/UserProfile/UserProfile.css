@@ -42,3 +42,28 @@
   border-radius: .5rem;
   padding: .5rem;
 }
+
+@media screen and (max-width: 480px) {
+  .Profile-Card {
+    width: 25rem;
+    border-radius: 1rem;
+    padding: .5rem;
+  }
+  
+  .Profile-Name {
+    font-size: 2.5rem;
+    margin: 1rem;
+  }
+  .Profile-div{
+    margin:1rem;
+    font-size: 1.2rem;
+  }
+  .Profile-section {
+    margin: .5rem 0;
+  }
+  .Profile-content {
+    width: 22rem;
+    border-radius: .5rem;
+    padding: .5rem;
+  }
+}
