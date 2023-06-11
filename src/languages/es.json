@@ -13,7 +13,11 @@
       "Home": "Casa"
     },
     "AboutUs": {},
-    "Catalogue": {},
+    "Catalogue": {
+      "addToCart": "Añadir al carrito",
+      "Category" : "categoria:",
+      "speedy": "velocista"
+    },
     "Payment": {
       "Title": "Formas de pago",
       "details": "detallaremos las formas de pagos disponibles:",

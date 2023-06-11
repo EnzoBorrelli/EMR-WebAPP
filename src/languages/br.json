@@ -13,7 +13,11 @@
       "Home": "Casa"
     },
     "AboutUs": {},
-    "Catalogue": {},
+    "Catalogue": {
+      "addToCart": "adicionar ao carrinho",
+      "Category": "categoria:",
+      "speedy": "robô veloz"
+    },
     "Payment": {
       "Title": "formas de pagamento",
       "details": "Vamos detalhar os métodos de pagamento disponíveis:",

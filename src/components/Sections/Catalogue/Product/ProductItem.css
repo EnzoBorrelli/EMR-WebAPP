@@ -1,0 +1,74 @@
+.Products {
+  margin: 1.2rem auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--light-terciary-color);
+  color: var(--primary-text-color);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.Product-card {
+  background-color: var(--light-secondary-color);
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.Product-name {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+.Product-category {
+  display: flex;
+  color: var(--disabled-text-color);
+  justify-content: start;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.Product-img {
+  width: 100%;
+  max-width: 12rem;
+  max-height: 12rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+}
+.Product-price {
+  display: flex;
+  color: var(--disabled-text-color);
+  justify-content: end;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+.Product-btn {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  top: 13.8rem;
+  right: 5rem;
+  border-radius: 0.5rem;
+  transition: all 0.8s ease;
+}
+.Product-svg {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+.Product-card:hover .Product-btn {
+  color: var(--primary-text-color);
+  right: 10rem;
+}
+.Product-btn:hover {
+  cursor: pointer;
+}

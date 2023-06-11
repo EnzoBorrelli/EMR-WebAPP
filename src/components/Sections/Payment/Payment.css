@@ -1,10 +1,10 @@
 :root {
-  --light-bg-color: #e1efe0;
-  --light-secondary-color: #b6c4b5;
-  --light-terciary-color: #96a395;
-  --primary-text-color: #171918;
-  --secondary-text-color: #303633;
-  --disabled-text-color: #47524d;
+  --light-bg-color: #f7fcf7;
+  --light-secondary-color: #f0f0f0;
+  --light-terciary-color: #dfe2de;
+  --primary-text-color: #1b1c1b;
+  --secondary-text-color: #3b3e3b;
+  --disabled-text-color: #7a7e7a;
   --hover-text-tone: #2bd91d;
   --hover-color: #79d172;
 }

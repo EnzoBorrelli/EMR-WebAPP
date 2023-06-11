@@ -1,5 +1,29 @@
-.divCatalogue{
-    font-size: 30rem;
-    background-color: orange;
-    height: 2000px;
+.Catalogue{
+    background-color: var(--light-bg-color);
+    padding: 1rem;
+    position: relative;
+}
+.catalogue-header{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+.Catalogue-cart{
+margin-top: .6rem;
+}
+.Cart-button{
+    height: 3rem;
+    width: 3rem;
+}
+.Cart-button:hover{
+    cursor: pointer;
+}
+.Cart-svg{
+    height: 100%;
+    width: 100%;
+    color: var(--primary-text-color);
+}
+.Cart-svg:hover{
+    color: var(--hover-color);
 }
