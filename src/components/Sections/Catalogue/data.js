@@ -1,5 +1,5 @@
-import ippo from './images/ippo.jpg'
-import ippo2 from './images/ippo2.jpg'
+//import ippo from './images/ippo.jpg'
+//import ippo2 from './images/ippo2.jpg'
 import placeholder from './images/placeholder.jpg'
 import correcaminos from './images/correcaminos.jpg'
 
@@ -10,8 +10,8 @@ const data = {
       name: "IUT v2.1",
       category:"minisumo",
       price: "5",
-      image: ippo,
-      spareImage: ippo2,
+      image: placeholder,
+      spareImage: placeholder,
     },
     {
       id: "2",
