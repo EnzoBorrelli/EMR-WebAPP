@@ -17,7 +17,7 @@ const data = {
       id: "2",
       name: "CC v2.2",
       category:"velocista",
-      price: "10000",
+      price: "1000",
       image: correcaminos,
       spareImage: correcaminos,
     },

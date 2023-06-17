@@ -15,8 +15,12 @@
     "AboutUs": {},
     "Catalogue": {
       "addToCart": "Añadir al carrito",
-      "Category" : "categoria:",
-      "speedy": "velocista"
+      "Category" : "categoria",
+      "speedy": "velocista",
+      "lab": "robot laberinto",
+      "futbol": "futbolista",
+      "total": "precio total",
+      "clear": "vaciar carrito"
     },
     "Payment": {
       "Title": "Formas de pago",

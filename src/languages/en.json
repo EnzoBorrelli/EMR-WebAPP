@@ -15,8 +15,12 @@
     "AboutUs": {},
     "Catalogue": {
       "addToCart": "Add to cart",
-      "Category": "category:",
-      "speedy": "speedster"
+      "Category": "category",
+      "speedy": "speedster",
+      "lab": "maze robot",
+      "futbol": "soccer robot",
+      "total": "total price",
+      "clear": "clear cart"
     },
     "Payment": {
       "Title": "Payment Methods",

@@ -15,8 +15,12 @@
     "AboutUs": {},
     "Catalogue": {
       "addToCart": "adicionar ao carrinho",
-      "Category": "categoria:",
-      "speedy": "robô veloz"
+      "Category": "categoria",
+      "speedy": "robô veloz",
+      "lab": "Robô labirinto",
+      "futbol": "robô futebolista",
+      "total": "preço total",
+      "clear": "Esvaziar carrinho"
     },
     "Payment": {
       "Title": "formas de pagamento",

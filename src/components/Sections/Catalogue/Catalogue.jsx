@@ -5,11 +5,13 @@ import ProductItem from "./Product/ProductItem";
 import data from "./data";
 import CurrencySelect from "../../../changeRates/CurrencySelect/CurrencySelect";
 import ShoppingCart from "../../User/ShoppingCart/ShoppingCart";
+import Filter from "./Filter/Filter";
 
 const Catalogue = () => {
   const { productItems } = data;
   const { texts } = useContext(LanguageContext);
   const [cartItems, setCartItems] = useState([]);
+  //var filteredItem = productItems;
 
   const [toggle, setToggle] = useState(false);
 
@@ -45,6 +47,15 @@ const Catalogue = () => {
       );
     }
   };
+  const handleCartClear = () => {
+    setCartItems([]);
+  };
+  /*const SetFilter = (filter) => {
+    filteredItem = productItems.filter(
+      (item) => item.category === filter
+    );
+    console.log(filteredItem);
+  };*/
   return (
     <body className="Catalogue">
       <div className="catalogue-header">
@@ -79,7 +90,8 @@ const Catalogue = () => {
           </button>
         </div>
       </div>
-      <div>
+      <div className="Catalogue-Products">
+        <Filter></Filter>
         <ProductItem
           productItems={productItems}
           handleAddProduct={handleAddProduct}
@@ -90,7 +102,9 @@ const Catalogue = () => {
           cartItems={cartItems}
           handleAddProduct={handleAddProduct}
           handleRemoveProduct={handleRemoveProduct}
+          handleCartClear={handleCartClear}
           toggle={toggle}
+          toggleCart={toggleCart}
         ></ShoppingCart>
       </div>
     </body>

@@ -1,5 +1,5 @@
 .Catalogue{
-    background-color: var(--light-bg-color);
+    background-color: var(--light-tone);
     padding: 1rem;
     position: relative;
 }
@@ -22,8 +22,13 @@ margin-top: .6rem;
 .Cart-svg{
     height: 100%;
     width: 100%;
-    color: var(--primary-text-color);
+    color: var(--text-hover-color);
 }
 .Cart-svg:hover{
-    color: var(--hover-color);
+    color: var(--text-color);
+}
+.Catalogue-Products{
+    display: flex;
+    flex-direction: row;
+    
 }

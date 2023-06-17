@@ -24,14 +24,33 @@
 .ShoppingCart-head {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  margin: .5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 1rem;
   font-size: 2.5rem;
   font-weight: bolder;
 }
 
-.ShoppingCart-empty {
-  display: none;
+.ShoppingCart-exit {
+  font-size: 2rem;
+}
+.ShoppingCart-Clear {
+  font-size: 1rem;
+  background-color: var(--light-tone);
+  color: var(--text-color);
+  text-align: center;
+  width: 10rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  margin-top: 4rem;
+}
+.ShoppingCart-Clear:hover{
+  cursor:pointer;
+}
+.ShoppingCart-exit:hover {
+  cursor: pointer;
+  color: red;
 }
 
 .ShoppingCart-list {
@@ -39,7 +58,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .ShoppingCart-img {
@@ -70,22 +89,22 @@
   color: var(--text-disabled);
 }
 
-.ShoppingCart-add {
+.ShoppingCart-remove {
   font-size: 1.2rem;
   background-color: var(--light-tone);
   text-align: center;
   width: 1.5rem;
   height: 1.4rem;
-  border-radius: .5rem 0 0 .5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
 }
 
-.ShoppingCart-remove {
+.ShoppingCart-add {
   font-size: 1.2rem;
   background-color: var(--light-tone);
   text-align: center;
   width: 1.6rem;
   height: 1.4rem;
-  border-radius: 0 .5rem .5rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
 }
 
 .ShoppingCart-add:hover,
@@ -132,7 +151,7 @@
   text-align: center;
   width: 10rem;
   height: 1.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin-right: 1rem;
   margin-top: 4rem;
 }
@@ -143,12 +162,10 @@
   color: var(--secondary-text-color);
 }
 
-@media screen and (max-width:480px) {
-
+@media screen and (max-width: 480px) {
   .ShoppingCart {
     width: 70%;
     left: 4.5rem;
-
   }
 
   .ShoppingCart.isActive {

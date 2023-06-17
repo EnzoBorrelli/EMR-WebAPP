@@ -15,7 +15,7 @@ const CurrencyProvider = ({ children }) => {
     let correctPrice = price * rate;
     return String(correctPrice.toFixed(2)) + " " + Currency;
   };
-  const data = { getCurrency, handleCurrency };
+  const data = { getCurrency, handleCurrency, Currency };
   return (
     <CurrencyContext.Provider value={data}>{children}</CurrencyContext.Provider>
   );
