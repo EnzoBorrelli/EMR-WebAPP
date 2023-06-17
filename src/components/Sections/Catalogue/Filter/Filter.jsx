@@ -9,11 +9,11 @@ const Filter = ({SetFilter}) => {
       <h3 className="Filter-H3">Filtros</h3>
       <div className="Filter-option">
         <h2 className="Filter-h2">{texts.sections.Catalogue.Category}</h2>
-        <button className="Filter-btn" onClick={()=>SetFilter("minisumo")}>Sumo</button>
-        <button className="Filter-btn">MiniSumo</button>
-        <button className="Filter-btn">{texts.sections.Catalogue.speedy}</button>
-        <button className="Filter-btn">{texts.sections.Catalogue.lab}</button>
-        <button className="Filter-btn">{texts.sections.Catalogue.futbol}</button>
+        <button className="Filter-btn" onClick={()=>SetFilter("sumo")}>Sumo</button>
+        <button className="Filter-btn" onClick={()=>SetFilter("minisumo")}>MiniSumo</button>
+        <button className="Filter-btn" onClick={()=>SetFilter("velocista")}>{texts.sections.Catalogue.speedy}</button>
+        <button className="Filter-btn" onClick={()=>SetFilter("laberinto")}>{texts.sections.Catalogue.lab}</button>
+        <button className="Filter-btn" onClick={()=>SetFilter("futbolista")}>{texts.sections.Catalogue.futbol}</button>
       </div>
       <div className="Filter-option">
         <h2 className="Filter-h2">option</h2>

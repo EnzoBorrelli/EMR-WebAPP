@@ -1,6 +1,7 @@
 .Filter {
   margin: 1.2rem auto;
   width: 20%;
+  height: 37rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,4 +71,31 @@
   height: 3rem;
   border-radius: 0 0 0.5rem 0.5rem;
   padding: 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .Filter {
+    margin: 1.2rem auto;
+    width: 30%;
+    height: 33.5rem;
+    padding: 0 0.5rem;
+  }
+  .Filter-H3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+  .Filter-h2 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .Filter-btn {
+    font-size: 0.8rem;
+    margin: 0.1rem;
+    font-weight: bold;
+  }
+  .Filter-Payments {
+    font-size: 1rem;
+  }
 }

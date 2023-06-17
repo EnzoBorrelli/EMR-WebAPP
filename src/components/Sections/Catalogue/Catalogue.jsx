@@ -9,9 +9,9 @@ import Filter from "./Filter/Filter";
 
 const Catalogue = () => {
   const { productItems } = data;
+  const [products, setProducts] = useState(productItems);
   const { texts } = useContext(LanguageContext);
   const [cartItems, setCartItems] = useState([]);
-  //var filteredItem = productItems;
 
   const [toggle, setToggle] = useState(false);
 
@@ -50,12 +50,14 @@ const Catalogue = () => {
   const handleCartClear = () => {
     setCartItems([]);
   };
-  /*const SetFilter = (filter) => {
-    filteredItem = productItems.filter(
-      (item) => item.category === filter
-    );
-    console.log(filteredItem);
-  };*/
+  const SetFilter = (filter) => {
+    const filteredItem = products.filter((item) => item.category === filter);
+    if (products === productItems) {
+      setProducts(filteredItem);
+    } else {
+      setProducts(productItems);
+    }
+  };
   return (
     <body className="Catalogue">
       <div className="catalogue-header">
@@ -91,9 +93,9 @@ const Catalogue = () => {
         </div>
       </div>
       <div className="Catalogue-Products">
-        <Filter></Filter>
+        <Filter SetFilter={SetFilter}></Filter>
         <ProductItem
-          productItems={productItems}
+          products={products}
           handleAddProduct={handleAddProduct}
         ></ProductItem>
       </div>

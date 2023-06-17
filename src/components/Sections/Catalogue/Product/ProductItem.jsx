@@ -3,21 +3,30 @@ import "./ProductItem.css";
 import LanguageContext from "../../../../context/LanguageContext";
 import CurrencyContext from "../../../../context/CurrencyContext";
 
-const ProductItem = ({ productItems, handleAddProduct }) => {
+const ProductItem = ({ products, handleAddProduct }) => {
   const { texts } = useContext(LanguageContext);
   const { getCurrency } = useContext(CurrencyContext);
 
   function categoryTraducer(category) {
-    if (category === "velocista") {
-      return texts.sections.Catalogue.speedy;
-    } else {
-      return category;
+    switch(category){
+      case "velocista":{
+        return texts.sections.Catalogue.speedy
+      }
+      case "laberinto":{
+        return texts.sections.Catalogue.lab
+      }
+      case "futbolista":{
+        return texts.sections.Catalogue.futbol
+      }
+      default:{
+        return category
+      }
     }
   }
 
   return (
     <div className="Products">
-      {productItems.map((productItem) => (
+      {products.map((productItem) => (
         <div className="Product-card">
           <div>
             <h3 className="Product-name">{productItem.name}</h3>

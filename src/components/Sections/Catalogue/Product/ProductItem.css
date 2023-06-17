@@ -17,6 +17,7 @@
 .Product-card {
   background-color: var(--secondary-bg-color);
   padding: 0.5rem;
+  height: fit-content;
   margin: 1rem;
   border-radius: 0.5rem;
   position: relative;
@@ -84,5 +85,56 @@
 .Product-btn--text{
   margin-left: .5rem;
   color:transparent;
+}
+
+@media screen and (max-width:480px) {
+  .Products {
+    margin-right: 1rem;
+  }
+  
+  .Product-name {
+    font-size: 1.5rem;
+  }
+  .Product-img {
+    margin: 0;
+  }
+  .Product-price {
+    margin: .2rem 0.5rem;
+  }
+  .Product-btn {
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    top: 12rem;
+    right: 8rem;
+    border-radius: 0.5rem;
+    transition: all 1s ease;
+  }
+  .Product-svg {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+  
+  .Product-btn:hover {
+    cursor: pointer;
+  }
+  .Product-btn:active{
+    top: 10rem;
+  }
+  .Product-btn:active .Product-btn--text{
+    color: var(--text-color);
+    
+  }
+  .Product-btn--text{
+    margin-left: .5rem;
+    color:transparent;
+  }
+  
 }
 
