@@ -58,6 +58,16 @@ const Catalogue = () => {
       setProducts(productItems);
     }
   };
+  const SetFilterPrice = (filterA, filterB) => {
+    const pricedItem = products.filter(
+      (item) => item.price >= filterA && item.price <= filterB
+    );
+    if (products === productItems) {
+      setProducts(pricedItem);
+    } else {
+      setProducts(productItems);
+    }
+  };
   return (
     <body className="Catalogue">
       <div className="catalogue-header">
@@ -93,7 +103,7 @@ const Catalogue = () => {
         </div>
       </div>
       <div className="Catalogue-Products">
-        <Filter SetFilter={SetFilter}></Filter>
+        <Filter SetFilter={SetFilter} SetFilterPrice={SetFilterPrice}></Filter>
         <ProductItem
           products={products}
           handleAddProduct={handleAddProduct}

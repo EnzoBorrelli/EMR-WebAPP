@@ -20,7 +20,11 @@
       "lab": "Robô labirinto",
       "futbol": "robô futebolista",
       "total": "preço total",
-      "clear": "Esvaziar carrinho"
+      "clear": "Esvaziar carrinho",
+      "price": "preço",
+      "moreThan": "mais do que ",
+      "new": "novo",
+      "Tax": "A este valor será adicionado qualquer imposto de pagamento que o seu país possua em relação à sua moeda local."
     },
     "Payment": {
       "Title": "formas de pagamento",
@@ -59,5 +63,14 @@
     "sections": {
       "uploadImage": "Enviar Imagem"
     }
+  },
+  "Error404": {
+    "pageNotFound": "Página não encontrada",
+    "pageNotAvailable": "A página que você está procurando não está disponível",
+    "pageReason": "Algumas das razões pelas quais você está vendo esta página são:",
+    "pageRemove": "A página foi removida e outras páginas ainda estão direcionando para ela",
+    "pageServer": "O servidor pode estar enfrentando problemas técnicos",
+    "pageTypo": "Você digitou um endereço incorreto na barra de pesquisa",
+    "pageReturn": "Voltar para página inicial"
   }
 }

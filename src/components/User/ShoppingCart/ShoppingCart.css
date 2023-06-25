@@ -161,6 +161,12 @@
   background-color: var(--text-hover-color);
   color: var(--secondary-text-color);
 }
+.ShoppingCart-taxText{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--disabled-text-color);
+}
 
 @media screen and (max-width: 480px) {
   .ShoppingCart {

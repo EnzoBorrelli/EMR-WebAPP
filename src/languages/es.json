@@ -20,7 +20,11 @@
       "lab": "robot laberinto",
       "futbol": "futbolista",
       "total": "precio total",
-      "clear": "vaciar carrito"
+      "clear": "vaciar carrito",
+      "price": "precio",
+      "moreThan": "superior a ",
+      "new":"nuevo",
+      "Tax": "a este monto se le agregara todo impuesto de pago que poseea su pais con respecto a su moneda local"
     },
     "Payment": {
       "Title": "Formas de pago",
@@ -59,5 +63,15 @@
     "sections": {
       "uploadImage": "subir Imagen"
     }
+  },
+  "Error404":{
+    "pageNotfound":"pagina no encontrada",
+    "pageNotAvailable":"la pagina que estas buscando no se encuentra disponible",
+    "pageReason":"algunas de las razones por la cual estas viendo esta pagina son:",
+    "pageRemove":"la pagina fue removida y otras paginas aun se direccionan a ella",
+    "pageServer":"el servidor puede tener problemas tecnicos",
+    "pageTypo":"Ha escrito un direccion incorrecta en su barra de busqueda",
+    "pageReturn":"volver al inicio"
+
   }
 }

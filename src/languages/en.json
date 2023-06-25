@@ -20,7 +20,11 @@
       "lab": "maze robot",
       "futbol": "soccer robot",
       "total": "total price",
-      "clear": "clear cart"
+      "clear": "clear cart",
+      "price": "price",
+      "moreThan": "more than ",
+      "new": "new",
+      "Tax": "To this amount will be added any payment tax that your country has with respect to your local currency."
     },
     "Payment": {
       "Title": "Payment Methods",
@@ -59,5 +63,14 @@
     "sections": {
       "uploadImage": "upload Image"
     }
+  },
+  "Error404": {
+    "pageNotFound": "Page not found",
+    "pageNotAvailable": "The page you are looking for is not available",
+    "pageReason": "Some of the reasons why you are seeing this page are:",
+    "pageRemove": "The page has been removed and other pages still link to it",
+    "pageServer": "The server may be experiencing technical difficulties",
+    "pageTypo": "You have entered an incorrect address in your search bar",
+    "pageReturn": "Return to homepage"
   }
 }

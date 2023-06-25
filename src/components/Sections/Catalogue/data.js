@@ -1,7 +1,6 @@
-import ippo from './images/Ippo.jpg'
-import ippo2 from './images/Ippo2.jpg'
-import placeholder from './images/placeholder.jpg'
-import correcaminos from './images/correcaminos.jpg'
+import ippo from './images/Ippo.webp'
+import placeholder from './images/placeholder.webp'
+import correcaminos from './images/correcaminos.webp'
 
 const data = {
   productItems: [
@@ -11,7 +10,8 @@ const data = {
       category:"minisumo",
       price: "5",
       image: ippo,
-      spareImage: ippo2,
+      spareImage: ippo,
+      new: true
     },
     {
       id: "2",
@@ -20,6 +20,7 @@ const data = {
       price: "1000",
       image: correcaminos,
       spareImage: correcaminos,
+      new: true
     },
     {
       id: "3",
@@ -28,6 +29,7 @@ const data = {
       price: "7.5",
       image: placeholder,
       spareImage: placeholder,
+      new: false
     },
     {
       id: "4",
@@ -36,6 +38,7 @@ const data = {
       price: "10",
       image: placeholder,
       spareImage: placeholder,
+      new: false
     },
     {
       id: "5",
@@ -44,14 +47,16 @@ const data = {
       price: "12",
       image: placeholder,
       spareImage: placeholder,
+      new: false
     },
     {
       id: "6",
       name: "placeholder5",
-      category:"laberinto",
+      category:"microsumo",
       price: "50",
       image: placeholder,
       spareImage: placeholder,
+      new: false
     },
     {
       id: "7",
@@ -60,6 +65,7 @@ const data = {
       price: "50",
       image: placeholder,
       spareImage: placeholder,
+      new: false
     },
     {
       id: "8",
@@ -68,14 +74,16 @@ const data = {
       price: "50",
       image: placeholder,
       spareImage: placeholder,
+      new: false
     },
     {
       id: "9",
       name: "placeholder5",
-      category:"laberinto",
+      category:"microsumo",
       price: "50",
       image: placeholder,
       spareImage: placeholder,
+      new: false
     },
   ],
 };

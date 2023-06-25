@@ -87,6 +87,26 @@
   color:transparent;
 }
 
+.Product-New{
+  width: 4rem;
+  height: 1.5rem;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  margin-left: 1rem;
+  background-color: gold;
+  color: darkgoldenrod;
+  border-radius: .5rem;
+  border: 2px solid rgb(251, 255, 213);
+}
+.Product-extended:hover{
+  cursor: pointer;
+  filter: blur(2px);
+}
+.Product-extended:active{
+filter: hue-rotate(180deg);
+}
+
 @media screen and (max-width:480px) {
   .Products {
     margin-right: 1rem;

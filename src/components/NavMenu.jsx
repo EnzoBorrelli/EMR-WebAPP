@@ -12,6 +12,8 @@ import Contact from "./Sections/Contact/Contact";
 import UserProfile from "./User/Sections/UserProfile/UserProfile";
 import PageFooter from "./PageFooter/PageFooter";
 import PaymentMethods from "./User/Sections/PaymentMethods/PaymentMethods";
+import ProductPage from "./Sections/Catalogue/Product/ProductPage/ProductPage";
+import Error404 from "./Error404/Error404";
 
 const NavMenu = () => {
 
@@ -30,6 +32,8 @@ const NavMenu = () => {
             <Route exact path="/Contact" element={<Contact />} />
             <Route exact path="/:user/Profile" element={< UserProfile />} />
             <Route exact path="/:user/PaymentMethods" element={< PaymentMethods />} />
+            <Route exact path="/:productCategory/:productName" element={< ProductPage/>} />
+            <Route path="*" element={< Error404/>} />
           </Routes>
           <PageFooter></PageFooter>
         </BrowserRouter>

@@ -64,6 +64,7 @@ const ShoppingCart = ({
         </div>
         <button className="ShoppingCart-done">CheckOut</button>
       </div>
+      <h2 className="ShoppingCart-taxText">{texts.sections.Catalogue.Tax}</h2>
       <button className="ShoppingCart-Clear" onClick={() => handleCartClear()}>{texts.sections.Catalogue.clear}</button>
     </div>
   );
