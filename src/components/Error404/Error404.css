@@ -23,28 +23,50 @@
   font-weight: bold;
 }
 .Error-Container {
-    backdrop-filter: blur(1px);
-    margin-left: 1rem;
+  backdrop-filter: blur(1px);
+  margin-left: 1rem;
 }
 .Error-subtitle {
   font-size: 1.1rem;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 .Error-return {
-    width: 10rem;
-    height: 2.5rem;
-    padding: .5rem;
-    font-weight: bold;
-    background-color:rgb(223, 143, 185);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 0 1rem;
+  width: 10rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  background-color: rgb(223, 143, 185);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 0 1rem;
 }
-.Error-return:hover{
-    cursor: pointer;
-    box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
+.Error-return:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
 }
-.Error-svg{
-    height: 1.5rem;
+.Error-svg {
+  height: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .Error-body{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .Error-MainTitle {
+    font-size: 4rem;
+    margin: 1rem;
+    margin-bottom: 3rem;
+  }
+  .Error-title {
+    font-size: 1.4rem;
+    margin: 1rem;
+  }
+  .Error-titleB {
+    font-size: 1.2rem;
+  }
+  .Error-subtitle {
+    font-size: 1rem;
+  }
 }

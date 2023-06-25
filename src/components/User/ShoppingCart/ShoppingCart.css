@@ -172,10 +172,12 @@
   .ShoppingCart {
     width: 70%;
     left: 4.5rem;
+    top:9rem;
   }
 
   .ShoppingCart.isActive {
     left: 4.5rem;
+    top:9rem;
   }
 
   .ShoppingCart-head {
@@ -205,5 +207,19 @@
   .ShoppingCart-name {
     font-size: 1rem;
     font-weight: bold;
+  }
+  .ShoppingCart-Total {
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .ShoppingCart-taxText{
+    margin: .5rem;
+    font-size: .8rem;
+  }
+  .ShoppingCart-Clear {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
   }
 }

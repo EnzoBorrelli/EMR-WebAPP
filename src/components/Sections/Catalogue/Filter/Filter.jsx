@@ -19,11 +19,11 @@ const Filter = ({SetFilter,SetFilterPrice}) => {
       </div>
       <div className="Filter-option">
         <h2 className="Filter-h2">{texts.sections.Catalogue.price}</h2>
-        <button className="Filter-btn" onClick={()=>SetFilterPrice(5,9.99)}>{getCurrency(5)}{" - "}{getCurrency(9.99)}</button>
-        <button className="Filter-btn" onClick={()=>SetFilterPrice(10,19.99)}>{getCurrency(10)}{" - "}{getCurrency(19.99)}</button>
-        <button className="Filter-btn" onClick={()=>SetFilterPrice(20,49.99)}>{getCurrency(20)}{" - "}{getCurrency(49.99)}</button>
-        <button className="Filter-btn" onClick={()=>SetFilterPrice(50,99.99)}>{getCurrency(50)}{" - "}{getCurrency(99.99)}</button>
-        <button className="Filter-btn" onClick={()=>SetFilterPrice(100,Infinity)}>{texts.sections.Catalogue.moreThan}{getCurrency(100)}</button>
+        <button className="Filter-btnB" onClick={()=>SetFilterPrice(5,9.99)}>{getCurrency(5)}{" - "}{getCurrency(9.99)}</button>
+        <button className="Filter-btnB" onClick={()=>SetFilterPrice(10,19.99)}>{getCurrency(10)}{" - "}{getCurrency(19.99)}</button>
+        <button className="Filter-btnB" onClick={()=>SetFilterPrice(20,49.99)}>{getCurrency(20)}{" - "}{getCurrency(49.99)}</button>
+        <button className="Filter-btnB" onClick={()=>SetFilterPrice(50,99.99)}>{getCurrency(50)}{" - "}{getCurrency(99.99)}</button>
+        <button className="Filter-btnB" onClick={()=>SetFilterPrice(100,Infinity)}>{texts.sections.Catalogue.moreThan}{getCurrency(100)}</button>
       </div>
       <button className="Filter-Payments">Metodos de pago</button>
     </div>
