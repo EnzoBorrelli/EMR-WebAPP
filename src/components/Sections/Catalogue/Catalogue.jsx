@@ -6,17 +6,27 @@ import data from "./data";
 import CurrencySelect from "../../../changeRates/CurrencySelect/CurrencySelect";
 import ShoppingCart from "../../User/ShoppingCart/ShoppingCart";
 import Filter from "./Filter/Filter";
+import ProductPage from "./Product/ProductPage/ProductPage";
 
 const Catalogue = () => {
   const { productItems } = data;
   const [products, setProducts] = useState(productItems);
-  const { texts } = useContext(LanguageContext);
   const [cartItems, setCartItems] = useState([]);
+
+  const [pageProduct, setPageProduct] = useState([]);
+  const [Pagetoggle, setPageToggle] = useState(false);
 
   const [toggle, setToggle] = useState(false);
 
   const toggleCart = () => {
     setToggle(!toggle);
+  };
+  const togglePage = (productData) => {
+    setPageToggle(true);
+    setPageProduct(productData);
+  };
+  const ClosePage = () => {
+    setPageToggle(false);
   };
 
   const handleAddProduct = (product) => {
@@ -107,6 +117,7 @@ const Catalogue = () => {
         <ProductItem
           products={products}
           handleAddProduct={handleAddProduct}
+          togglePage={togglePage}
         ></ProductItem>
       </div>
       <div>
@@ -118,6 +129,13 @@ const Catalogue = () => {
           toggle={toggle}
           toggleCart={toggleCart}
         ></ShoppingCart>
+      </div>
+      <div>
+        <ProductPage
+          Pagetoggle={Pagetoggle}
+          pageProduct={pageProduct}
+          ClosePage={ClosePage}
+        />
       </div>
     </body>
   );

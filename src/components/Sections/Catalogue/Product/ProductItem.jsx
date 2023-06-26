@@ -2,10 +2,8 @@ import React, { useContext, useState } from "react";
 import "./ProductItem.css";
 import LanguageContext from "../../../../context/LanguageContext";
 import CurrencyContext from "../../../../context/CurrencyContext";
-import { NavLink } from "react-router-dom";
-import ProductPage from "./ProductPage/ProductPage";
 
-const ProductItem = ({ products, handleAddProduct }) => {
+const ProductItem = ({ products, handleAddProduct, togglePage }) => {
   const { texts } = useContext(LanguageContext);
   const { getCurrency } = useContext(CurrencyContext);
 
@@ -25,7 +23,9 @@ const ProductItem = ({ products, handleAddProduct }) => {
       }
     }
   }
-
+  function ToggleState() {
+    setToggle(!toggle);
+  }
   return (
     <div className="Products">
       {products.map((productItem) => (
@@ -46,8 +46,8 @@ const ProductItem = ({ products, handleAddProduct }) => {
               {categoryTraducer(productItem.category)}
             </h3>
           </div>
-          <NavLink
-            to={`/${productItem.category}/${productItem.name}`}
+          <button
+            onClick={() => togglePage(productItem)}
             className="Product-extended"
           >
             <img
@@ -55,7 +55,7 @@ const ProductItem = ({ products, handleAddProduct }) => {
               alt={productItem.name}
               className="Product-img"
             />
-          </NavLink>
+          </button>
           <div>
             <h3 className="Product-price">{getCurrency(productItem.price)}</h3>
           </div>
