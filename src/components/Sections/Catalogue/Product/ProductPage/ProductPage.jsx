@@ -2,13 +2,9 @@ import React, { useContext, useState } from "react";
 import "./ProductPage.css";
 import CurrencyContext from "../../../../../context/CurrencyContext";
 
-const ProductPage = ({ Pagetoggle, pageProduct, ClosePage }) => {
+const ProductPage = ({ Pagetoggle, pageProduct, ClosePage,ChangeImg,img }) => {
   const { getCurrency } = useContext(CurrencyContext);
-  const [img, setImg] = useState(pageProduct.image);
-
-  function ChangeImg(image) {
-    setImg(image);
-  }
+  
   return (
     <div className={`pageDiv ${Pagetoggle ? "isActive" : ""}`}>
       <div className="Page-Close">

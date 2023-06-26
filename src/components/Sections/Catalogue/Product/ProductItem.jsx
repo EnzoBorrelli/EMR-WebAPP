@@ -47,7 +47,7 @@ const ProductItem = ({ products, handleAddProduct, togglePage }) => {
             </h3>
           </div>
           <button
-            onClick={() => togglePage(productItem)}
+            onClick={() => togglePage(productItem,productItem.image)}
             className="Product-extended"
           >
             <img

@@ -18,12 +18,19 @@ const Catalogue = () => {
 
   const [toggle, setToggle] = useState(false);
 
+  const [img, setImg] = useState(pageProduct.image);
+
+  function ChangeImg(image) {
+    setImg(image);
+  }
+
   const toggleCart = () => {
     setToggle(!toggle);
   };
-  const togglePage = (productData) => {
+  const togglePage = (productData,image) => {
     setPageToggle(true);
     setPageProduct(productData);
+    setImg(image);
   };
   const ClosePage = () => {
     setPageToggle(false);
@@ -135,6 +142,8 @@ const Catalogue = () => {
           Pagetoggle={Pagetoggle}
           pageProduct={pageProduct}
           ClosePage={ClosePage}
+          ChangeImg={ChangeImg}
+          img={img}
         />
       </div>
     </body>
