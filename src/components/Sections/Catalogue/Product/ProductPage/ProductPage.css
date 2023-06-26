@@ -40,7 +40,6 @@
 .Page-head {
   width: 42%;
   margin: .5rem 0;
-  background-color: chocolate;
   
 }
 
@@ -53,7 +52,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: brown;
   padding: 1rem;
 }
 .Page-imgs {
@@ -62,18 +60,25 @@
   display: flex;
   flex-direction: row;
   align-items: start;
-  background-color: aqua;
   padding: .5rem;
 }
 .Page-imgSelect {
   display: flex;
   flex-direction: column;
-  background-color: chartreuse;
+  background-color: var(--terciary-bg-color);
+  border-radius: .5rem 0 0 .5rem;
   padding: 0 .5rem;
 }
 .Page-imgOption {
   width: 5rem;
   height: 5rem;
+}
+.Page-imgOption:hover{
+  cursor: pointer;
+  filter: blur(1px);
+}
+.Page-imgOption:active{
+filter: hue-rotate(180deg);
 }
 .Page-MainImg {
   width: 20rem;
@@ -86,7 +91,6 @@
 }
 .Page-Data {
   width: 50%;
-  background-color: darkgoldenrod;
   margin: 1rem;
   padding: .5rem;
 }
@@ -94,6 +98,9 @@
   width: 100%;
   height: 100%;
   margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .Page-line{
   display: block;
@@ -101,12 +108,37 @@
   width: 50%;
   background-color: var(--disabled-text-color);
 }
+.Page-CartBtn{
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: all 1s ease;
+}
+.Page-CartBtn:hover {
+  cursor: pointer;
+}
+.Page-CartBtn:active{
+  transform: translate(0,-15px);
+}
+.Page-CartBtn:active .Page-CartBtn--text{
+  color: var(--text-color);
+  
+}
+.Page-CartBtn--text{
+  margin-left: .5rem;
+  color:transparent;
+}
 .Page-Foot {
   margin: 1rem 0;
 }
-.Page-FootSection {
-  background-color: blue;
-}
+/*.Page-FootSection {
+}*/
 .FootSection-title {
   font-size: 1.5rem;
   margin: .2rem 0;

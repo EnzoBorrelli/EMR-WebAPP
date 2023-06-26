@@ -72,5 +72,22 @@
     "pageServer": "O servidor pode estar enfrentando problemas técnicos",
     "pageTypo": "Você digitou um endereço incorreto na barra de pesquisa",
     "pageReturn": "Voltar para página inicial"
+  },
+  "PCBs": {
+    "Description": {
+      "iutv2": "descripcion de iutv2",
+      "ccv2": "descripcion de ccv2",
+      "place": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tempor nisi, sed efficitur justo. Aenean ac sem vitae mauris pulvinar vehicula."
+    },
+    "AnotherDescription": {
+      "iutv2": "descripcion de iutv2",
+      "ccv2": "descripcion de ccv2",
+      "place": "Nullam scelerisque ipsum vitae lectus ultrices, at tincidunt nulla malesuada. Phasellus euismod pharetra enim, ac cursus neque ultrices nec. Aliquam eu justo in purus vestibulum feugiat. Nunc eu risus non sem tincidunt interdum. Suspendisse potenti. Proin blandit massa ac urna vulputate, a accumsan ligula suscipit."
+    },
+    "OtherDescription": {
+      "iutv2": "otra descripcion de iutv2",
+      "ccv2": "otra descripcion de ccv2",
+      "place": "Curabitur mattis bibendum elit, vitae facilisis justo dapibus sit amet. In hac habitasse platea dictumst. Donec non lobortis dui. Cras pretium urna id varius fermentum. Fusce ullamcorper finibus mauris, ac tincidunt risus pulvinar sed."
+    }
   }
 }

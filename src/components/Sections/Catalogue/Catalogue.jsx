@@ -141,6 +141,7 @@ const Catalogue = () => {
         <ProductPage
           Pagetoggle={Pagetoggle}
           pageProduct={pageProduct}
+          handleAddProduct={handleAddProduct}
           ClosePage={ClosePage}
           ChangeImg={ChangeImg}
           img={img}

@@ -1,7 +1,6 @@
 import ippo from './images/Ippo.webp'
 import placeholder from './images/placeholder.webp'
 import correcaminos from './images/correcaminos.webp'
-
 const data = {
   productItems: [
     {
@@ -11,7 +10,8 @@ const data = {
       price: "5",
       image: ippo,
       spareImage: ippo,
-      new: true
+      new: true,
+      textKey: "iutv2"
     },
     {
       id: "2",
@@ -20,7 +20,8 @@ const data = {
       price: "1000",
       image: correcaminos,
       spareImage: correcaminos,
-      new: true
+      new: true,
+      textKey: "ccv2"
     },
     {
       id: "3",
@@ -29,7 +30,8 @@ const data = {
       price: "7.5",
       image: placeholder,
       spareImage: placeholder,
-      new: false
+      new: false,
+      textKey: "place"
     },
     {
       id: "4",
@@ -38,7 +40,8 @@ const data = {
       price: "10",
       image: placeholder,
       spareImage: placeholder,
-      new: false
+      new: false,
+      textKey: "place"
     },
     {
       id: "5",
@@ -47,7 +50,8 @@ const data = {
       price: "12",
       image: placeholder,
       spareImage: placeholder,
-      new: false
+      new: false,
+      textKey: "place"
     },
     {
       id: "6",
@@ -56,7 +60,8 @@ const data = {
       price: "50",
       image: placeholder,
       spareImage: placeholder,
-      new: false
+      new: false,
+      textKey: "place"
     },
     {
       id: "7",
@@ -65,7 +70,8 @@ const data = {
       price: "50",
       image: placeholder,
       spareImage: placeholder,
-      new: false
+      new: false,
+      textKey: "place"
     },
     {
       id: "8",
@@ -74,7 +80,8 @@ const data = {
       price: "50",
       image: placeholder,
       spareImage: placeholder,
-      new: false
+      new: false,
+      textKey: "place"
     },
     {
       id: "9",
@@ -83,7 +90,8 @@ const data = {
       price: "50",
       image: placeholder,
       spareImage: placeholder,
-      new: false
+      new: false,
+      textKey: "place"
     },
   ],
 };
